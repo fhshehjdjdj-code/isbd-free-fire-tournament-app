@@ -16,76 +16,40 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be committed to version control.
+# VS Code
 .vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
-**/ios/Flutter/Flutter.podspec
-**/ios/Flutter/Flutter.framework
-**/ios/Flutter/Flutter.plugin
-**/ios/Flutter/GeneratedPluginRegistrant.*
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/flutter_export_environment.sh
 **/ios/Runner/GeneratedPluginRegistrant.*
-**/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest
-/pubspec.lock
-/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest
-/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest.sha1
-
-# Exceptions to above rules.
-!/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest
-!/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest.sha1
-
-# Web related
-lib/generated_plugin_registrant.dart
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# iOS/macOS
-**/ios/**/*.mode1v3
-**/ios/**/*.mode2v3
-**/ios/**/*.moved-aside
-**/ios/**/*.pbxuser
-**/ios/**/*.perspectivev3
-**/ios/**/*.xcconfig
-**/ios/**/*.xcworkspace
-**/ios/**/.sconsign.dblite
-**/ios/**/.tags*
-**/ios/**/.vagrant/
-**/ios/**/DerivedData/
-**/ios/**/Icon?
-**/ios/**/Pods/
-**/ios/**/.symlinks/
-**/ios/**/.flutter-plugins
-**/ios/**/.flutter-plugins-dependencies
-**/ios/**/*.jks
-**/ios/**/*.keystore
-**/ios/**/*.mobileprovision
-**/ios/**/*.orig.*
-**/ios/**/*.pbxuser
-**/ios/**/*.perspectivev3
-**/ios/**/*.xcbkptlist
-**/ios/**/.sconsign.dblite
-**/ios/**/.tern-port
-**/macos/Flutter/GeneratedPluginRegistrant.swift
-
-# Android/Gradle/Maven
+**/ios/Runner/GeneratedPluginRegistrant.swift
 **/android/local.properties
-**/android/GeneratedPluginRegistrant.java
+**/android/key.properties
+**/android/.gradle/
+**/android/app/debug.keystore
+**/android/app/release.keystore
+**/pubspec.lock
+
+# Metadata
+*.iml
+*.ipr
+*.iws
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
 
 # Web
-lib/generated_plugin_registrant.dart
-
-# macOS
-**/macos/Flutter/GeneratedPluginRegistrant.swift
+web/*.js
 
 # Coverage
 coverage/
 
-# Exceptions to above rules.
-!/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest
-!/packages/flutter_tools/test/data/dart_dependencies_test/data/utf8.manifest.sha1
+# Build outputs
+build/

@@ -1,0 +1,33 @@
+name: isbd_free_fire_tournament
+description: A Flutter-based mobile app for Free Fire tournament registration and management.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.0
+  http: ^1.1.0
+  intl: ^0.19.0
+  google_fonts: ^6.1.0
+
+  # Optional Firebase dependencies for future backend integration
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.14.0
+  cloud_firestore: ^4.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
