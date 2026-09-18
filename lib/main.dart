@@ -1,34 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'providers/tournament_provider.dart';
-import 'providers/user_provider.dart';
-import 'screens/home_screen.dart';
+import 'screens/weather_dashboard.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const WeatherApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class WeatherApp extends StatelessWidget {
+  const WeatherApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => UserProvider()),
-        ChangeNotifierProvider(create: (_) => TournamentProvider()),
-      ],
-      child: MaterialApp(
-        title: 'ISBD Free Fire Tournament',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.deepOrange,
-          brightness: Brightness.dark,
-          useMaterial3: true,
-        ),
-        home: const HomeScreen(),
-      ),
+    return MaterialApp(
+      title: 'Weather Dashboard',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(colorSchemeSeed: Colors.deepOrange, brightness: Brightness.dark, useMaterial3: true),
+      home: const WeatherDashboard(),
     );
   }
 }
